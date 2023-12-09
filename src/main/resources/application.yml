@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: root
+    password: admin123
+    url: jdbc:mysql:///train
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
