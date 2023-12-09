@@ -1,6 +1,8 @@
 package com.hdu.train.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.hdu.train.util.Result;
+import lombok.extern.log4j.Log4j;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -11,8 +13,11 @@ import org.springframework.stereotype.Controller;
  * @author zq
  * @since 2023-12-09
  */
-@Controller
+@RestController
 @RequestMapping("/user")
 public class UserController {
-
+    @GetMapping("/hello")
+    public Result hello(){
+        return Result.ok().data("hello","world");
+    }
 }

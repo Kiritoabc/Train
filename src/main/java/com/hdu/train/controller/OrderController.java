@@ -3,6 +3,7 @@ package com.hdu.train.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author zq
  * @since 2023-12-09
  */
-@Controller
+@RestController
 @RequestMapping("/order")
 public class OrderController {
 
